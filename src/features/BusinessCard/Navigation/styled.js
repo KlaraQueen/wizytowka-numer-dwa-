@@ -6,8 +6,8 @@ export const Nav = styled.nav`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: clamp(8px, 1.5vw, 20px);
-  padding: clamp(14px, 2vw, 24px) clamp(12px, 2.5vw, 32px);
+  gap: clamp(6px, 1vw, 12px);
+  padding: clamp(8px, 1.2vw, 14px) clamp(12px, 2.5vw, 32px);
   max-width: 100%;
   box-sizing: border-box;
   background: ${({ theme }) => theme.color.background};
@@ -30,7 +30,7 @@ export const Logo = styled.a`
   gap: clamp(8px, 1vw, 12px);
   text-decoration: none;
   color: ${({ theme }) => theme.color.secondary};
-  font-size: clamp(15px, 1.6vw, 21px);
+  font-size: clamp(14px, 1.4vw, 18px);
   font-weight: 700;
   cursor: pointer;
   letter-spacing: 0.01em;
@@ -44,7 +44,7 @@ export const Logo = styled.a`
 `;
 
 export const LogoIcon = styled(GiWrench)`
-  font-size: clamp(20px, 2.2vw, 32px);
+  font-size: clamp(18px, 1.8vw, 26px);
   color: ${({ theme }) => theme.color.primary};
   flex-shrink: 0;
 `;
@@ -72,7 +72,7 @@ export const NavLink = styled.button`
   color: ${({ theme }) => theme.color.text};
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(30, 58, 95, 0.12);
   cursor: pointer;
-  padding: clamp(6px, 0.6vw, 8px) clamp(12px, 1vw, 16px);
+  padding: clamp(4px, 0.5vw, 6px) clamp(12px, 1vw, 16px);
   font-family: inherit;
   letter-spacing: 0.03em;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -82,13 +82,13 @@ export const NavLink = styled.button`
 
   @media (max-width: 767px) {
     font-size: clamp(6px, 2vw, 10px);
-    padding: clamp(4px, 1vw, 6px) clamp(6px, 1.2vw, 10px);
+    padding: clamp(2px, 0.8vw, 4px) clamp(6px, 1.2vw, 10px);
   }
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 6px;
+    bottom: 4px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -120,8 +120,8 @@ export const IconLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(24px, 2.4vw, 36px);
-  height: clamp(24px, 2.4vw, 36px);
+  width: clamp(20px, 2vw, 28px);
+  height: clamp(20px, 2vw, 28px);
   color: ${({ theme }) => theme.color.primary};
   text-decoration: none;
   font-size: clamp(12px, 1.3vw, 16px);
