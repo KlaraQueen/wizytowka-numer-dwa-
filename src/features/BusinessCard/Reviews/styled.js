@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   padding: clamp(20px, 4vw, 44px) 0;
-  scroll-margin-top: 80px;
 
   @media (min-width: 768px) {
     padding: clamp(28px, 4vw, 44px) 0;
@@ -54,17 +53,23 @@ export const Card = styled.div`
   background: white;
   padding: 14px;
   border-radius: ${({ theme }) => theme.radius.sm};
-  box-shadow: 0 2px 10px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(30, 58, 95, 0.04);
+  box-shadow:
+    0 2px 10px ${({ theme }) => theme.color.shadow},
+    0 0 0 1px rgba(30, 58, 95, 0.04);
   transition: all 0.3s ease;
 
   @media (min-width: 768px) {
     padding: clamp(20px, 2.5vw, 28px);
     border-radius: ${({ theme }) => theme.radius.md};
-    box-shadow: 0 2px 12px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(30, 58, 95, 0.04);
+    box-shadow:
+      0 2px 12px ${({ theme }) => theme.color.shadow},
+      0 0 0 1px rgba(30, 58, 95, 0.04);
   }
 
   &:hover {
-    box-shadow: 0 8px 24px ${({ theme }) => theme.color.shadowHover}, 0 0 0 1px rgba(30, 58, 95, 0.05);
+    box-shadow:
+      0 8px 24px ${({ theme }) => theme.color.shadowHover},
+      0 0 0 1px rgba(30, 58, 95, 0.05);
     transform: translateY(-2px);
   }
 `;

@@ -60,7 +60,7 @@ export const siteData = {
   },
 
   reviews: {
-    label: "Opinie Google",
+    label: "Opinie",
     title: "Co mówią o nas klienci",
     items: [
       { author: "Anna K.", text: "Profesjonalna obsługa od A do Z. Samochód naprawiony szybko i solidnie. Polecam AutoSerwis Plus każdemu, kto szuka rzetelnego warsztatu.", rating: 5 },

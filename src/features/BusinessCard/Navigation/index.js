@@ -7,7 +7,12 @@ const Navigation = () => {
   const { companyName, contact, nav } = siteData;
   const scrollTo = (id) => {
     const el = document.getElementById(id);
-    el?.scrollIntoView({ behavior: "smooth" });
+    const header = document.querySelector("header");
+    if (!el) return;
+
+    const headerHeight = header?.getBoundingClientRect().height ?? 0;
+    const targetTop = el.getBoundingClientRect().top + window.scrollY - headerHeight;
+    window.scrollTo({ top: targetTop, behavior: "smooth" });
   };
 
   return (

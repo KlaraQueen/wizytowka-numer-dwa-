@@ -20,7 +20,8 @@ export const Header = styled.header`
 export const Content = styled.main`
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 clamp(16px, 3vw, 32px) clamp(16px, 3vw, 32px) clamp(32px, 4vw, 48px);
+  padding: 0 clamp(16px, 3vw, 32px) clamp(16px, 3vw, 32px)
+    clamp(32px, 4vw, 48px);
   box-sizing: border-box;
 `;
 
@@ -36,13 +37,10 @@ export const TwoCol = styled.div`
 `;
 
 export const AboutArea = styled.div`
-  scroll-margin-top: 80px;
 `;
 
 export const GalleryArea = styled.div`
-  scroll-margin-top: 80px;
 `;
 
 export const ContactArea = styled.div`
-  scroll-margin-top: 80px;
 `;

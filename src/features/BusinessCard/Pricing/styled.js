@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   padding: clamp(28px, 4vw, 40px) 0;
-  scroll-margin-top: 80px;
 `;
 
 export const Label = styled.span`
@@ -45,12 +44,16 @@ export const Card = styled.div`
   background: white;
   padding: clamp(16px, 2vw, 20px);
   border-radius: ${({ theme }) => theme.radius.md};
-  box-shadow: 0 2px 8px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(30, 58, 95, 0.04);
+  box-shadow:
+    0 2px 8px ${({ theme }) => theme.color.shadow},
+    0 0 0 1px rgba(30, 58, 95, 0.04);
   transition: all 0.3s ease;
   border-left: 3px solid ${({ theme }) => theme.color.primary};
 
   &:hover {
-    box-shadow: 0 8px 24px ${({ theme }) => theme.color.shadowHover}, 0 0 0 1px rgba(30, 58, 95, 0.05);
+    box-shadow:
+      0 8px 24px ${({ theme }) => theme.color.shadowHover},
+      0 0 0 1px rgba(30, 58, 95, 0.05);
     transform: translateY(-1px);
   }
 `;

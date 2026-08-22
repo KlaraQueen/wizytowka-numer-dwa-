@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  padding: clamp(20px, 4vw, 48px) 0;
-  scroll-margin-top: 80px;
+  padding: clamp(20px, 4vw, 40px) 0;
 
   @media (min-width: 768px) {
-    padding: clamp(32px, 4vw, 48px) 0;
+    padding: clamp(28px, 4vw, 40px) 0;
   }
 `;
 

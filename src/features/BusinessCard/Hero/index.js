@@ -3,7 +3,13 @@ import { siteData } from "../../../siteData";
 
 const Hero = () => {
   const scrollToContact = () => {
-    document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" });
+    const target = document.getElementById("kontakt");
+    const header = document.querySelector("header");
+    if (!target) return;
+
+    const headerHeight = header?.getBoundingClientRect().height ?? 0;
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+    window.scrollTo({ top: targetTop, behavior: "smooth" });
   };
 
   const { title, subtitle, buttonText } = siteData.hero;
